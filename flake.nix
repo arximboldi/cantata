@@ -11,7 +11,7 @@
 				inherit system;
 			};
 			isLinux = pkgs.lib.strings.hasSuffix "-linux" system;
-			qtEnv = with pkgs.qt6; env "qt-custom-${qtbase.version}" 
+			qtEnv = with pkgs.qt6; env "qt-custom-${qtbase.version}"
 				([
 					qtbase
 					qtconnectivity
@@ -44,6 +44,7 @@
 				libmtp
 				media-player-info
 				kdePackages.kitemviews
+        kdePackages.karchive
 			];
 		in
 		{
@@ -61,5 +62,5 @@
 			};
 		}
 	);
-	
+
 }
