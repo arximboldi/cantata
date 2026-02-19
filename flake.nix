@@ -44,7 +44,7 @@
 				libmtp
 				media-player-info
 				kdePackages.kitemviews
-        kdePackages.karchive
+				kdePackages.karchive
 			];
 		in
 		{
